@@ -283,6 +283,36 @@
   .mc-detail { border:1px solid #E5E3DE; border-radius:11px; padding:12px 14px; margin-bottom:1rem; background:#FCFBF9; }
   .mc-detail-head { font-size:13.5px; font-weight:700; color:#0D1B2A; margin-bottom:9px; }
   .mc-empty-note { font-size:12.5px; color:#999; margin-bottom:8px; }
+ /* ── Mobile ── */
+@media (max-width: 640px) {
+  header { padding: 1.1rem 1.1rem; gap: 0.75rem; }
+  header h1 { font-size: 19px; min-width: 0; }
+  header p { font-size: 12px; }
+
+  /* Reddit buttons side-by-side, full width, below the title */
+  .community-stack { flex-direction: row; width: 100%; }
+  .community-btn { flex: 1; }
+  #roadmapBtn { width: 100%; justify-content: center; }
+
+  .main { padding: 1rem 1rem; }
+
+  /* One card per row — prevents horizontal scroll on narrow phones */
+  .grid { grid-template-columns: 1fr; }
+
+  /* Stack the start-here banner */
+  .start-here { flex-direction: column; align-items: stretch; gap: 10px; padding: 14px; }
+  .start-here button { width: 100%; }
+
+  /* Stack Strengths / Weaknesses in the detail modal */
+  .detail-row { flex-direction: column; }
+
+  /* Give modals more usable width */
+  .modal-bg { padding: 0.5rem; }
+  .modal { padding: 1.25rem; border-radius: 14px; }
+
+  /* Drop the roadmap indent so steps don't get squeezed */
+  .rm-items, .rm-weak .rm-items { padding-left: 0; }
+}
 </style>
 </head>
 <body>
