@@ -445,7 +445,7 @@ const CONTENT_SECTIONS = {
   33:['bb','cp','ps'], 49:['bb','cp','ps'], 50:['cp','bb'], 51:['bb','cp'], 52:['ps'],
   53:['bb','cp'], 55:['bb'], 56:['cp'], 57:['bb','cp'],
   58:['ps','bb','cp'], 59:['bb'], 60:['bb'], 63:['bb'], 64:['bb'], 65:['bb'], 66:['ps','bb'], 74:['cars'], 78:['cars'], 83:['bb','cp','ps'],
-  91:['ps','bb'], 92:['ps','bb'], 93:['bb','cp','ps'], 98:['bb','cp','ps'],
+  91:['ps','bb'], 92:['ps','bb'], 93:['bb','cp','ps'], 98:['bb','cp','ps'], 101:['bb','cp','ps'],
 };
 
 // Standardized, filterable tag vocabulary (qualitative attributes; section info lives in the section filter)
@@ -567,6 +567,7 @@ const RESOURCE_URLS = {
   98:'https://bootcamp.com/mcat',
   99:'https://www.medschoolcoach.com/mcat-tutoring/',
   100:'https://www.reddit.com/r/AnkiMCAT/',
+  101:'https://www.youtube.com/@professoreman2289',
 };
 function urlFor(id) {
   const u = RESOURCE_URLS[id];
@@ -959,6 +960,12 @@ const RESOURCES = [
     pros:'Hands-free content review for auditory learners. Great for turning dead time into study time.',
     cons:'Audio-only, so no visuals or practice questions. Not comprehensive across all sections.',
     rating:4.0, price:'free', styles:['self-paced','budget'] },
+ { id:101, cat:'content', name:'Professor Eman (YouTube)', icon:'▶️', iconBg:'#FAECE7', type:'YouTube channel',
+    desc:'A popular MCAT YouTuber whose free videos walk through the sciences — biochem, gen chem, orgo, physics, and some P/S — each with downloadable notes and transcripts. A solid second explanation when a topic isn\'t clicking, and often mentioned alongside Yusuf Hasan. Works best as a supplement, not your only content source.',
+    tags:['visual','high-yield'],
+    pros:'Free videos across the science sections, with downloadable notes and transcripts. Clear, approachable explanations that make a good second pass on tricky topics. A frequent community recommendation.',
+    cons:'A supplement rather than a full course — not as complete as Khan Academy, and light on CARS. Pair it with a primary content resource.',
+    rating:4.6, price:'free', styles:['visual','self-paced','budget'] },
 
   // ── Organizational tools ──
   { id:67, cat:'tools', name:'AAMC percentile ranks', icon:'🏛️', iconBg:'#E1F5EE', type:'Official score percentiles',
